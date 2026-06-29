@@ -53,7 +53,7 @@
 
     if (settings.provider === "thesportsdb") {
   var key = settings.apiKey; // your premium key here
-  var url = "https://footballcoin.onrender.com";
+  var PROXY_BASE_URL = "https://www.thesportsdb.com/api/v2/json/livescore/soccer";
 
   return fetch(url, {
     headers: {

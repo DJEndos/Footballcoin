@@ -89,9 +89,18 @@ a { text-decoration: none; }
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
+.fc-reveal img{
+  width: 46px;
+  mix-blend-mode:darken;
+  border-radius: 100%;
+}
 .fc-reveal.fc-in {
   opacity: 1;
   transform: translateY(0);
+}
+#pitch img{
+ width: 46px;
+ height: 46px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -382,7 +391,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   margin-bottom: 0.6rem;
   font-size: 1.1rem;
 }
-
+.fc-stat-card .fc-stat-icon img{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: fill;
+}
 /* ---------- Academy CTA banner (dark) ---------- */
 .fc-academy-banner {
   background: linear-gradient(115deg, var(--fc-navy-900) 0%, var(--fc-purple-700) 100%);
@@ -561,7 +575,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition: all .25s;
 }
 .fc-partner-logo:hover { filter: none; opacity: 1; }
-.fc-partner-logo img { max-height: 100%; max-width: 100%; }
+.fc-partner-logo img { max-height: 100%; max-width: 100%; 
+  border-radius: 10px;
+  mix-blend-mode:luminosity;
+}
 
 /* ---------- Instagram strip ---------- */
 .fc-insta-tile { position: relative; overflow: hidden; border-radius: var(--fc-radius-sm); aspect-ratio: 1/1; }
