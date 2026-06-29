@@ -18,7 +18,7 @@ if (!API_KEY || API_KEY === "YOUR_PREMIUM_KEY_HERE") {
 }
 
 /* ── CORS — only allow requests from your own frontend ──────── */
-const allowedOrigin = process.env.ALLOWED_ORIGIN || "http://localhost:5500";
+const allowedOrigin = process.env.ALLOWED_ORIGIN || "https://footballcoin.vercel.app";
 app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (mobile apps, curl, Postman)

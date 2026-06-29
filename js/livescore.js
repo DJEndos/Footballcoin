@@ -53,7 +53,7 @@
 
     if (settings.provider === "thesportsdb") {
   var key = settings.apiKey; // your premium key here
-  var url = "https://www.thesportsdb.com/api/v2/json/livescore/soccer";
+  var url = "https://footballcoin.onrender.com";
 
   return fetch(url, {
     headers: {
