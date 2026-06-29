@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FootballCoin Academy — Developing Talent, Creating Opportunities</title>
+  <meta name="description" content="Football Coin Academy scouts, nurtures and empowers promising footballers to grow into confident professionals with strong character." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>window.FC_PAGE = "index.html";</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div id="fc-navbar-placeholder"></div>
+
+<!-- ===================== HERO ===================== -->
+<section class="fc-hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <span class="fc-eyebrow mb-3 d-inline-block">&#9917; Football Coin Academy</span>
+        <h1>Developing Talent.<br><span class="fc-text-teal">Creating Opportunities.</span></h1>
+        <p class="lead mt-3 mb-4" style="max-width:480px">We scout, nurture, and empower promising footballers, helping them grow into confident professionals with strong character to light up the future.</p>
+        <div class="fc-hero-actions">
+          <a href="programs.html" class="btn btn-fc-teal btn-lg">Start Your Journey</a>
+          <a href="about.html" class="btn-fc-outline-light">
+            <span class="fc-play-btn">&#9654;</span> Watch Overview
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="fc-hero-image-wrap text-center" style="position:relative">
+          <!-- Decorative polygon shapes (CSS-drawn) -->
+          <div style="position:absolute;top:-20px;right:20px;width:90px;height:90px;background:var(--fc-teal-500);clip-path:polygon(50% 0%,93% 25%,93% 75%,50% 100%,7% 75%,7% 25%);opacity:0.25;"></div>
+          <div style="position:absolute;bottom:30px;left:0;width:50px;height:50px;background:var(--fc-pink-500);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);opacity:0.35;"></div>
+          <!-- Player silhouette card -->
+          <div style="background:rgba(255,255,255,0.06);backdrop-filter:blur(10px);border-radius:24px;padding:2rem;display:inline-block;min-height:340px;min-width:280px;position:relative;">
+            <div style="font-size:8rem;line-height:1;text-align:center;opacity:0.85;">🏃</div>
+            <div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);background:var(--fc-teal-500);color:#06231C;font-weight:700;font-size:0.8rem;padding:8px 20px;border-radius:100px;white-space:nowrap;">#7 — Elite Striker</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LIVE MATCHES PANEL ===================== -->
+<section class="py-0">
+  <div class="container">
+    <div class="fc-live-panel fc-reveal">
+      <div class="fc-live-panel-header">
+        <h6><span class="fc-live-dot"></span> Live Match Updates</h6>
+        <a href="programs.html" class="fc-live-link">View All &rarr;</a>
+      </div>
+      <div id="liveMatchList">
+        <p class="text-muted small mb-0">Loading matches&hellip;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEXT MATCH BANNER ===================== -->
+<section class="py-5 mt-2">
+  <div class="container">
+    <div id="nextMatchWidget">
+      <div class="fc-next-match p-0 fc-reveal">
+        <div class="row g-0 align-items-stretch">
+          <div class="col-md-7 p-4 p-lg-5 d-flex flex-column justify-content-center">
+            <span class="fc-pill-tag mb-3">Next Match</span>
+            <span class="fc-eyebrow mb-2">Upcoming Match</span>
+            <h2 class="text-white mt-2 mb-1 fs-3" data-next-home>Football Coin FC</h2>
+            <h3 class="fc-text-teal fs-4 mb-3">VS <span data-next-away>Brighton Mariners FC</span></h3>
+            <p class="small mb-4" style="color:rgba(255,255,255,0.65)" data-next-date>January 24, 2026 &middot; 12:00 pm &middot; Emirates Stadium</p>
+            <div>
+              <a href="contact.html" class="btn btn-fc-teal" data-next-cta>Be Part of the Legacy</a>
+            </div>
+          </div>
+          <div class="col-md-5" style="min-height:240px;background:linear-gradient(135deg,rgba(255,255,255,0.05),rgba(43,224,184,0.12));display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;color:rgba(255,255,255,0.2);font-size:6rem;">⚽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BUILDING CHAMPIONS ===================== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6 fc-reveal">
+        <span class="fc-eyebrow mb-3">Our Mission</span>
+        <h2 class="fc-section-title mt-2 mb-3">Building Champions<br>Beyond The Game.</h2>
+        <p>At Football Coin, we develop more than footballers. We build leaders with discipline, teamwork, and a passion for excellence on and off the pitch.</p>
+        <div class="row g-3 mt-2 mb-4">
+          <div class="col-4 text-center">
+            <div class="fc-stat-num" data-counter="activePlayers">91</div>
+            <div class="fc-stat-label">Active Players</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fc-stat-num" data-counter="academyAlumni">271</div>
+            <div class="fc-stat-label">Academy Alumni</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fc-stat-num" data-counter="partnerClubs">42</div>
+            <div class="fc-stat-label">Partner Clubs</div>
+          </div>
+        </div>
+        <a href="about.html" class="btn btn-fc-dark">Join Our Academy</a>
+        <p class="small text-muted mt-2">Be the first step on your football journey with world-class training and mentorship.</p>
+        <a href="programs.html" class="btn btn-fc-teal mt-2">Apply Now &rarr;</a>
+      </div>
+      <div class="col-lg-6 fc-reveal">
+        <div style="background:linear-gradient(135deg,var(--fc-purple-900),var(--fc-teal-600));border-radius:var(--fc-radius-lg);min-height:340px;display:flex;align-items:center;justify-content:center;font-size:7rem;color:rgba(255,255,255,0.2);">🏟️</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACADEMY DARK BANNER ===================== -->
+<section class="py-4">
+  <div class="container">
+    <div class="fc-academy-banner fc-reveal">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-lg-7 p-4 p-lg-5">
+          <span class="fc-eyebrow mb-3" style="background:rgba(255,255,255,0.1);color:var(--fc-teal-400)">Join Us Today</span>
+          <h2 class="text-white mt-3 mb-2">Kickstart Your Football Career<br><span class="fc-text-teal">With Football Coin Academy</span></h2>
+          <p style="color:rgba(255,255,255,0.65)" class="mb-4">Professional training, personal growth, and unforgettable experiences.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="fc-feature-pill"><span class="dot" style="background:var(--fc-teal-400)"></span>Elite Coaching</span>
+            <span class="fc-feature-pill"><span class="dot" style="background:#A78BFA"></span>Modern Facilities</span>
+            <span class="fc-feature-pill"><span class="dot" style="background:var(--fc-pink-500)"></span>Global Exposure</span>
+          </div>
+          <a href="programs.html" class="btn btn-fc-teal">Explore Programs &rarr;</a>
+        </div>
+        <div class="col-lg-5" style="background:linear-gradient(135deg,rgba(43,224,184,0.15),rgba(91,44,143,0.3));min-height:280px;display:flex;align-items:center;justify-content:center;font-size:8rem;color:rgba(255,255,255,0.12);">🥅</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROGRAMS ===================== -->
+<section class="py-5 mt-2">
+  <div class="container">
+    <div class="text-center mb-5 fc-reveal">
+      <h2 class="fc-section-title">Programs Designed to Unlock<br>Your Full Potential.</h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4 col-6 fc-reveal">
+        <a href="programs.html" class="fc-program-card" style="height:220px">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a3a5c,#2d6a4f);"></div>
+          <div class="fc-program-body">
+            <div><h6 class="mb-0">Foundation Program</h6><small>Ages 6–10</small></div>
+            <span class="fc-program-arrow">&#8594;</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 fc-reveal">
+        <a href="programs.html" class="fc-program-card" style="height:220px">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#3b1e70,#16c79a);"></div>
+          <div class="fc-program-body">
+            <div><h6 class="mb-0">Development Program</h6><small>Ages 11–14</small></div>
+            <span class="fc-program-arrow">&#8594;</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 fc-reveal">
+        <a href="programs.html" class="fc-program-card" style="height:220px">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0a2540,#6b3fa0);"></div>
+          <div class="fc-program-body">
+            <div><h6 class="mb-0">Elite Program</h6><small>Ages 15–18</small></div>
+            <span class="fc-program-arrow">&#8594;</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 fc-reveal">
+        <a href="programs.html" class="fc-program-card" style="height:220px">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1f4e79,#1b6ca8);"></div>
+          <div class="fc-program-body">
+            <div><h6 class="mb-0">Goalkeeper Training</h6><small>Specialist GK Program</small></div>
+            <span class="fc-program-arrow">&#8594;</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 fc-reveal">
+        <a href="programs.html" class="fc-program-card" style="height:220px">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0e3b3a,#0a7c5c);"></div>
+          <div class="fc-program-body">
+            <div><h6 class="mb-0">Fitness &amp; Conditioning</h6><small>Strength, Speed &amp; Agility</small></div>
+            <span class="fc-program-arrow">&#8594;</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 fc-reveal">
+        <a href="programs.html" class="fc-program-card" style="height:220px">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#4a0e8f,#ff6f9c);"></div>
+          <div class="fc-program-body">
+            <div><h6 class="mb-0">Mental Performance</h6><small>Focus, Confidence &amp; Resilience</small></div>
+            <span class="fc-program-arrow">&#8594;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="py-4">
+  <div class="container">
+    <div class="fc-why-section fc-reveal">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-lg-6 p-4 p-lg-5">
+          <span class="fc-eyebrow mb-3" style="background:rgba(255,255,255,0.2);color:#fff">Why Players Choose</span>
+          <h2 class="text-white mt-3 mb-4">Why Players Choose<br>Football Coin</h2>
+          <ul class="fc-why-list list-unstyled">
+            <li><span class="check">&#10003;</span>UEFA Licensed Coaches</li>
+            <li><span class="check">&#10003;</span>Personalized Player Development</li>
+            <li><span class="check">&#10003;</span>International Tournaments</li>
+            <li><span class="check">&#10003;</span>Education &amp; Career Support</li>
+          </ul>
+          <a href="about.html" class="btn btn-fc-dark mt-2">Discover More</a>
+        </div>
+        <div class="col-lg-6" style="min-height:280px;display:flex;align-items:center;justify-content:center;font-size:9rem;color:rgba(255,255,255,0.15);">🏆</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== IMPACT IN NUMBERS ===================== -->
+<section class="py-5 fc-bg-soft">
+  <div class="container">
+    <div class="text-center mb-5 fc-reveal">
+      <h2 class="fc-section-title">Our Impact<br>In Numbers</h2>
+    </div>
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3 fc-reveal">
+        <div class="fc-stat-card">
+          <div class="fc-stat-icon mx-auto mb-2" style="background:rgba(91,44,143,0.1);color:var(--fc-purple-500)">🏅</div>
+          <div class="fc-stat-num" data-counter="yearsExcellence">15</div>
+          <div class="fc-stat-label">Years of Excellence</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fc-reveal">
+        <div class="fc-stat-card">
+          <div class="fc-stat-icon mx-auto mb-2" style="background:rgba(22,199,154,0.1);color:var(--fc-teal-600)">👥</div>
+          <div class="fc-stat-num" data-counter="playersDeveloped">500</div>
+          <div class="fc-stat-label">Players Developed</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fc-reveal">
+        <div class="fc-stat-card">
+          <div class="fc-stat-icon mx-auto mb-2" style="background:rgba(255,111,156,0.1);color:var(--fc-pink-500)">🤝</div>
+          <div class="fc-stat-num" data-counter="partnerClubs">25</div>
+          <div class="fc-stat-label">Partner Clubs</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fc-reveal">
+        <div class="fc-stat-card">
+          <div class="fc-stat-icon mx-auto mb-2" style="background:rgba(91,44,143,0.1);color:var(--fc-purple-500)">🌍</div>
+          <div class="fc-stat-num" data-counter="countriesReached">10</div>
+          <div class="fc-stat-label">Countries Reached</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 fc-reveal">
+      <h2 class="fc-section-title">Voices from<br>Our Community</h2>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4 fc-reveal">
+              <div class="fc-testimonial-card">
+                <p class="mb-4">"Football Coin changed my mindset and my future. I went from a local league player to signing my first professional contract."</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div style="width:46px;height:46px;border-radius:50%;background:var(--fc-purple-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700">LC</div>
+                  <div><div class="fw-700 small">Liam Carter</div><div class="text-muted small">Academy Graduate</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fc-reveal">
+              <div class="fc-testimonial-card">
+                <p class="mb-4">"The best environment for young players to grow. The coaches are knowledgeable, supportive, and truly invest in each player."</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div style="width:46px;height:46px;border-radius:50%;background:var(--fc-teal-600);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700">SM</div>
+                  <div><div class="fw-700 small">Sophia Martinez</div><div class="text-muted small">Parent</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fc-reveal">
+              <div class="fc-testimonial-card">
+                <p class="mb-4">"Professional coaches and top-class facilities. My son's game improved dramatically in just one season. Highly recommend!"</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div style="width:46px;height:46px;border-radius:50%;background:var(--fc-pink-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700">EB</div>
+                  <div><div class="fw-700 small">Ethan Brown</div><div class="text-muted small">Player U18</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="fc-testimonial-card">
+                <p class="mb-4">"My daughter's confidence has grown tremendously since joining the academy. The mental performance coaching is exceptional."</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div style="width:46px;height:46px;border-radius:50%;background:var(--fc-purple-700);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700">AO</div>
+                  <div><div class="fw-700 small">Adaeze Okafor</div><div class="text-muted small">Parent</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="fc-testimonial-card">
+                <p class="mb-4">"The international tournament experience at FootballCoin opened doors I never imagined. I now play for the national youth team."</p>
+                <div class="d-flex align-items-center gap-3">
+                  <div style="width:46px;height:46px;border-radius:50%;background:var(--fc-teal-500);color:#06231C;display:flex;align-items:center;justify-content:center;font-weight:700">JA</div>
+                  <div><div class="fw-700 small">James Adeyemi</div><div class="text-muted small">National Youth Team</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators position-static mt-4">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LATEST NEWS ===================== -->
+<section class="py-5 fc-bg-soft">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4 fc-reveal">
+      <h2 class="fc-section-title mb-0">Latest News &amp; Updates</h2>
+      <a href="blog.html" class="btn btn-fc-teal btn-sm">View All News</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6 fc-reveal">
+        <a href="blog.html" class="fc-news-card text-decoration-none">
+          <div class="fc-news-img" style="aspect-ratio:16/8">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0e3b3a,#3b1e70);display:flex;align-items:center;justify-content:center;font-size:3.5rem;color:rgba(255,255,255,0.3);">🏟️</div>
+            <span class="fc-news-tag" style="background:var(--fc-teal-600)">Academy</span>
+          </div>
+          <div class="fc-news-body">
+            <div class="fc-news-date">January 15, 2026</div>
+            <h5>Rising Stars: The Next Generation of Football Talent</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 fc-reveal">
+        <a href="blog.html" class="fc-news-card text-decoration-none">
+          <div class="fc-news-img">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a3a5c,#0fa988);display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:rgba(255,255,255,0.3);">🧠</div>
+            <span class="fc-news-tag" style="background:#6B3FA0">Training</span>
+          </div>
+          <div class="fc-news-body">
+            <div class="fc-news-date">January 10, 2026</div>
+            <h6>Mental Strength: The Hidden Advantage</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 fc-reveal">
+        <a href="blog.html" class="fc-news-card text-decoration-none">
+          <div class="fc-news-img">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#4a0e8f,#ff6f9c);display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:rgba(255,255,255,0.3);">✈️</div>
+            <span class="fc-news-tag" style="background:var(--fc-pink-500)">Events</span>
+          </div>
+          <div class="fc-news-body">
+            <div class="fc-news-date">January 08, 2026</div>
+            <h6>International Tour Experience 2026</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA READY TO BEGIN ===================== -->
+<section class="py-4">
+  <div class="container">
+    <div class="fc-reveal" style="background:linear-gradient(120deg,var(--fc-purple-700),var(--fc-purple-900));border-radius:var(--fc-radius-lg);padding:3rem;position:relative;overflow:hidden;">
+      <div style="position:absolute;right:-20px;bottom:-20px;font-size:12rem;color:rgba(255,255,255,0.06);">⚽</div>
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2 class="text-white mb-3">Ready to Begin<br>Your Journey?</h2>
+          <p style="color:rgba(255,255,255,0.7)" class="mb-4">Join Football Coin Academy and turn your passion into purpose.</p>
+          <a href="programs.html" class="btn btn-fc-teal btn-lg">Apply Now</a>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex align-items-center justify-content-center" style="font-size:8rem;color:rgba(255,255,255,0.12)">🏅</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COACHES ===================== -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5 fc-reveal">
+      <h2 class="fc-section-title">Meet Our Coaches</h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-lg-3 fc-reveal">
+        <div class="fc-coach-card">
+          <div style="width:100%;aspect-ratio:1/1.1;background:linear-gradient(135deg,#e8f4fd,#c5e3f7);border-radius:var(--fc-radius-md);display:flex;align-items:center;justify-content:center;font-size:5rem;margin-bottom:1rem;">👨‍💼</div>
+          <div class="fw-700">James Wilson</div>
+          <div class="text-muted small">Head Coach</div>
+          <div class="fc-coach-social">
+            <a href="#" aria-label="Twitter">&#x1D54B;</a>
+            <a href="#" aria-label="Instagram">&#x1F4F7;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 fc-reveal">
+        <div class="fc-coach-card">
+          <div style="width:100%;aspect-ratio:1/1.1;background:linear-gradient(135deg,#fce8f3,#f7c5e2);border-radius:var(--fc-radius-md);display:flex;align-items:center;justify-content:center;font-size:5rem;margin-bottom:1rem;">👩‍💼</div>
+          <div class="fw-700">Maria Sanchez</div>
+          <div class="text-muted small">Technical Director</div>
+          <div class="fc-coach-social">
+            <a href="#" aria-label="Twitter">&#x1D54B;</a>
+            <a href="#" aria-label="Instagram">&#x1F4F7;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 fc-reveal">
+        <div class="fc-coach-card">
+          <div style="width:100%;aspect-ratio:1/1.1;background:linear-gradient(135deg,#e8fdf4,#c5f7e2);border-radius:var(--fc-radius-md);display:flex;align-items:center;justify-content:center;font-size:5rem;margin-bottom:1rem;">👨‍🏫</div>
+          <div class="fw-700">David Lee</div>
+          <div class="text-muted small">Goalkeeping Coach</div>
+          <div class="fc-coach-social">
+            <a href="#" aria-label="Twitter">&#x1D54B;</a>
+            <a href="#" aria-label="Instagram">&#x1F4F7;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTNERS ===================== -->
+<section class="py-5 fc-bg-soft">
+  <div class="container">
+    <div class="text-center mb-4 fc-reveal"><h2 class="fc-section-title">Our Partners</h2></div>
+    <div class="row g-4 align-items-center justify-content-center fc-reveal">
+      <div class="col-4 col-md-2"><div class="fc-partner-logo"><div style="font-size:2rem">🔵</div></div></div>
+      <div class="col-4 col-md-2"><div class="fc-partner-logo"><div style="font-size:2rem">⚽</div></div></div>
+      <div class="col-4 col-md-2"><div class="fc-partner-logo"><div style="font-size:1.4rem;font-weight:700;letter-spacing:-1px">NIKE</div></div></div>
+      <div class="col-4 col-md-2"><div class="fc-partner-logo"><div style="font-size:1.4rem;font-weight:900;font-style:italic">J</div></div></div>
+      <div class="col-4 col-md-2"><div class="fc-partner-logo"><div style="font-size:2rem">🔴🔵</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INSTAGRAM ===================== -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-4 fc-reveal">
+      <h2 class="fc-section-title">Follow Our Journey</h2>
+      <p class="text-muted">@footballcoin_academy</p>
+    </div>
+    <div class="row g-2 fc-reveal">
+      <div class="col-4 col-md-2"><div class="fc-insta-tile"><div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#3b1e70,#16c79a);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">⚽</div></div></div>
+      <div class="col-4 col-md-2"><div class="fc-insta-tile"><div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#0e3b3a,#1a3a5c);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">🏃</div></div></div>
+      <div class="col-4 col-md-2"><div class="fc-insta-tile"><div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#4a0e8f,#0fa988);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">🏆</div></div></div>
+      <div class="col-4 col-md-2 d-none d-md-block"><div class="fc-insta-tile"><div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#ff6f9c,#3b1e70);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">🥅</div></div></div>
+      <div class="col-4 col-md-2 d-none d-md-block"><div class="fc-insta-tile"><div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#16c79a,#1f0f3d);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">👟</div></div></div>
+      <div class="col-4 col-md-2 d-none d-md-block"><div class="fc-insta-tile"><div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#0a2540,#6b3fa0);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">🌍</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWSLETTER ===================== -->
+<section class="py-5 fc-bg-soft">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center fc-reveal">
+        <div class="fc-newsletter-icon mx-auto mb-3">📧</div>
+        <h3 class="fc-section-title">Stay Connected</h3>
+        <p class="text-muted mb-4">Join our newsletter for updates, events, and success stories.</p>
+        <form id="newsletterForm" novalidate>
+          <div class="input-group fc-newsletter-input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" required />
+            <button class="btn btn-fc-teal" type="submit">Subscribe</button>
+          </div>
+          <div class="fc-form-feedback text-success mt-2 d-none"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="fc-footer-placeholder"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data-store.js"></script>
+<script src="js/livescore.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

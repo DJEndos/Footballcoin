@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs — FootballCoin Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>window.FC_PAGE = "programs.html"; window.FC_SOLID_NAV = true;</script>
+</head>
+<body>
+<div id="fc-navbar-placeholder"></div>
+
+<!-- Header -->
+<section class="fc-page-header">
+  <div class="container">
+    <p class="fc-breadcrumb mb-2"><a href="index.html">Home</a> / Programs</p>
+    <h1 class="text-white">Our Programs</h1>
+    <p style="color:rgba(255,255,255,0.7);max-width:520px" class="mt-2">Six specialist tracks designed to develop every dimension of a footballer — from first touch to professional contract.</p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div id="enrollSuccess" class="alert alert-success d-none" role="alert">
+      Application submitted! Our team will be in touch within 48 hours. ✅
+    </div>
+    <div class="row g-4">
+
+      <!-- Program cards -->
+      <div class="col-md-6 col-lg-4 fc-reveal">
+        <div class="card h-100 border-0 shadow-sm" style="border-radius:var(--fc-radius-md);overflow:hidden">
+          <div style="height:180px;background:linear-gradient(135deg,#1a3a5c,#2d6a4f);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">⚽</div>
+          <div class="card-body p-4">
+            <span class="fc-eyebrow mb-2">Ages 6–10</span>
+            <h5 class="mt-2 mb-2">Foundation Program</h5>
+            <p class="small text-muted mb-3">Introduce children to the joy of football through fun, structured sessions that build fundamental skills and teamwork.</p>
+            <ul class="small text-muted list-unstyled">
+              <li class="mb-1">&#10003; Basic ball skills &amp; coordination</li>
+              <li class="mb-1">&#10003; Intro to team play</li>
+              <li class="mb-1">&#10003; Age-appropriate fitness</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 px-4 pb-4">
+            <button class="btn btn-fc-teal w-100" data-bs-toggle="modal" data-bs-target="#enrollModal" data-program="Foundation Program">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 fc-reveal">
+        <div class="card h-100 border-0 shadow-sm" style="border-radius:var(--fc-radius-md);overflow:hidden">
+          <div style="height:180px;background:linear-gradient(135deg,#3b1e70,#16c79a);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">🏃</div>
+          <div class="card-body p-4">
+            <span class="fc-eyebrow mb-2">Ages 11–14</span>
+            <h5 class="mt-2 mb-2">Development Program</h5>
+            <p class="small text-muted mb-3">A structured pathway for emerging talents — building technical ability, tactical awareness, and mental resilience.</p>
+            <ul class="small text-muted list-unstyled">
+              <li class="mb-1">&#10003; Advanced technique sessions</li>
+              <li class="mb-1">&#10003; Tactical formations &amp; analysis</li>
+              <li class="mb-1">&#10003; Competition &amp; match-play</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 px-4 pb-4">
+            <button class="btn btn-fc-teal w-100" data-bs-toggle="modal" data-bs-target="#enrollModal" data-program="Development Program">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 fc-reveal">
+        <div class="card h-100 border-0 shadow-sm" style="border-radius:var(--fc-radius-md);overflow:hidden">
+          <div style="height:180px;background:linear-gradient(135deg,#0a2540,#6b3fa0);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">🏆</div>
+          <div class="card-body p-4">
+            <span class="fc-eyebrow mb-2">Ages 15–18</span>
+            <h5 class="mt-2 mb-2">Elite Program</h5>
+            <p class="small text-muted mb-3">Pre-professional training designed to fast-track the most talented players to professional academies and national teams.</p>
+            <ul class="small text-muted list-unstyled">
+              <li class="mb-1">&#10003; Pro-level conditioning</li>
+              <li class="mb-1">&#10003; International tournament exposure</li>
+              <li class="mb-1">&#10003; Scouting &amp; agent connections</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 px-4 pb-4">
+            <button class="btn btn-fc-teal w-100" data-bs-toggle="modal" data-bs-target="#enrollModal" data-program="Elite Program">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 fc-reveal">
+        <div class="card h-100 border-0 shadow-sm" style="border-radius:var(--fc-radius-md);overflow:hidden">
+          <div style="height:180px;background:linear-gradient(135deg,#1f4e79,#1b6ca8);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">🥅</div>
+          <div class="card-body p-4">
+            <span class="fc-eyebrow mb-2">Specialist</span>
+            <h5 class="mt-2 mb-2">Goalkeeper Training</h5>
+            <p class="small text-muted mb-3">A specialist programme for GKs at all levels — covering shot-stopping, distribution, communication, and match analysis.</p>
+            <ul class="small text-muted list-unstyled">
+              <li class="mb-1">&#10003; Shot-stopping technique</li>
+              <li class="mb-1">&#10003; Aerial command &amp; distribution</li>
+              <li class="mb-1">&#10003; Video analysis sessions</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 px-4 pb-4">
+            <button class="btn btn-fc-teal w-100" data-bs-toggle="modal" data-bs-target="#enrollModal" data-program="Goalkeeper Training">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 fc-reveal">
+        <div class="card h-100 border-0 shadow-sm" style="border-radius:var(--fc-radius-md);overflow:hidden">
+          <div style="height:180px;background:linear-gradient(135deg,#0e3b3a,#0a7c5c);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">💪</div>
+          <div class="card-body p-4">
+            <span class="fc-eyebrow mb-2">Fitness &amp; Strength</span>
+            <h5 class="mt-2 mb-2">Fitness &amp; Conditioning</h5>
+            <p class="small text-muted mb-3">Sport-specific physical preparation covering strength, speed, agility, injury prevention, and elite recovery protocols.</p>
+            <ul class="small text-muted list-unstyled">
+              <li class="mb-1">&#10003; S&amp;C programming</li>
+              <li class="mb-1">&#10003; Speed &amp; agility drills</li>
+              <li class="mb-1">&#10003; Nutrition guidance</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 px-4 pb-4">
+            <button class="btn btn-fc-teal w-100" data-bs-toggle="modal" data-bs-target="#enrollModal" data-program="Fitness & Conditioning">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 fc-reveal">
+        <div class="card h-100 border-0 shadow-sm" style="border-radius:var(--fc-radius-md);overflow:hidden">
+          <div style="height:180px;background:linear-gradient(135deg,#4a0e8f,#ff6f9c);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">🧠</div>
+          <div class="card-body p-4">
+            <span class="fc-eyebrow mb-2">Psychology</span>
+            <h5 class="mt-2 mb-2">Mental Performance</h5>
+            <p class="small text-muted mb-3">Develop the mindset of a champion with focus sessions, resilience coaching, confidence building, and pre-match routines.</p>
+            <ul class="small text-muted list-unstyled">
+              <li class="mb-1">&#10003; Mindfulness &amp; visualization</li>
+              <li class="mb-1">&#10003; Pressure-moment training</li>
+              <li class="mb-1">&#10003; Goal-setting frameworks</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 px-4 pb-4">
+            <button class="btn btn-fc-teal w-100" data-bs-toggle="modal" data-bs-target="#enrollModal" data-program="Mental Performance">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Enrol Modal -->
+<div class="modal fade" id="enrollModal" tabindex="-1" aria-labelledby="enrollModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border-radius:var(--fc-radius-md);border:none">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-700" id="enrollModalLabel">Apply for a Program</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-2">
+        <form id="enrollForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-600 small">Player's Full Name *</label>
+              <input type="text" class="form-control fc-form-control" required />
+              <div class="invalid-feedback">Please enter the player's name.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-600 small">Date of Birth *</label>
+              <input type="date" class="form-control fc-form-control" required />
+              <div class="invalid-feedback">Date of birth is required.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-600 small">Parent / Guardian Name *</label>
+              <input type="text" class="form-control fc-form-control" required />
+              <div class="invalid-feedback">Please enter a guardian name.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-600 small">Email Address *</label>
+              <input type="email" class="form-control fc-form-control" required />
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-600 small">Phone Number *</label>
+              <input type="tel" class="form-control fc-form-control" required />
+              <div class="invalid-feedback">Phone number is required.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-600 small">Program of Interest *</label>
+              <select class="form-select fc-form-control" id="enrollProgramSelect" required>
+                <option value="">Select a program…</option>
+                <option>Foundation Program</option>
+                <option>Development Program</option>
+                <option>Elite Program</option>
+                <option>Goalkeeper Training</option>
+                <option>Fitness &amp; Conditioning</option>
+                <option>Mental Performance</option>
+              </select>
+              <div class="invalid-feedback">Please select a program.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-600 small">Player's Current Level / Experience</label>
+              <textarea class="form-control fc-form-control" rows="3" placeholder="Tell us about current club, position, experience…"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="agreeTerms" required />
+                <label class="form-check-label small" for="agreeTerms">I agree to the academy's terms and privacy policy *</label>
+                <div class="invalid-feedback">You must agree before submitting.</div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mt-4">
+            <button type="submit" class="btn btn-fc-teal flex-grow-1">Submit Application</button>
+            <button type="button" class="btn btn-fc-dark" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="fc-footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data-store.js"></script>
+<script src="js/livescore.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Pre-fill the program dropdown when opened via card button
+  document.querySelectorAll("[data-program]").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var sel = document.getElementById("enrollProgramSelect");
+      if (sel) sel.value = btn.getAttribute("data-program");
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login — FootballCoin Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body { background: var(--fc-navy-900); min-height: 100vh; display: flex; align-items: center; }
+    .fc-login-card { background: #fff; border-radius: var(--fc-radius-lg); padding: 2.5rem; max-width: 420px; width: 100%; margin: auto; }
+    .fc-login-logo { text-align: center; margin-bottom: 2rem; }
+    .fc-login-logo .ball { font-size: 2.4rem; display: inline-block; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+<div class="container px-3 py-5">
+  <div class="fc-login-card shadow-lg">
+    <div class="fc-login-logo">
+      <div class="ball">⚽</div>
+      <h4 class="mb-0">FootballCoin</h4>
+      <p class="text-muted small">Admin Dashboard</p>
+    </div>
+    <div id="loginError" class="alert alert-danger d-none" role="alert">Incorrect credentials. Try <strong>admin / admin123</strong> for this demo.</div>
+    <form id="loginForm" novalidate>
+      <div class="mb-3">
+        <label class="form-label fw-600 small">Username</label>
+        <input type="text" class="form-control fc-form-control" id="loginUser" placeholder="admin" required autocomplete="username" />
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-600 small">Password</label>
+        <input type="password" class="form-control fc-form-control" id="loginPass" placeholder="••••••••" required autocomplete="current-password" />
+      </div>
+      <button type="submit" class="btn btn-fc-teal w-100 py-2">Sign In</button>
+    </form>
+    <p class="text-center text-muted small mt-4 mb-0">
+      Demo credentials: <code>admin</code> / <code>admin123</code><br>
+      <a href="../index.html" class="small">← Return to site</a>
+    </p>
+  </div>
+</div>
+<script src="../js/data-store.js"></script>
+<script>
+  // Redirect if already logged in
+  if (window.FCStore && window.FCStore.isAdminLoggedIn()) {
+    window.location.replace("index.html");
+  }
+  document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var u = document.getElementById("loginUser").value.trim();
+    var p = document.getElementById("loginPass").value;
+    // Demo credentials — replace with a real auth check against your backend
+    if (u === "admin" && p === "admin123") {
+      window.FCStore.login(u);
+      window.location.replace("index.html");
+    } else {
+      document.getElementById("loginError").classList.remove("d-none");
+    }
+  });
+</script>
+</body>
+</html>
